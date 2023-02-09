@@ -10,10 +10,8 @@ from enum import Enum
 
 app = FastAPI()
 
-origins = [
-    "http://localhost",
-    "http://localhost:3000",
-]
+origins = ["*"]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
