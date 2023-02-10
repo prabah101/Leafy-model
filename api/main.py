@@ -20,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-POTATO_MODEL = tf.keras.models.load_model("../saved_models/2")
+POTATO_MODEL = tf.keras.models.load_model("./saved_models/2")
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
 class AvailablePlants(str, Enum):
